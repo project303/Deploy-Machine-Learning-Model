@@ -107,7 +107,7 @@ def text_preprocessing(text):
 
 """## Load Feature"""
 
-with open('tfidf_vectorizer.pkl', 'rb') as file:
+with open('model/tfidf_vectorizer.pkl', 'rb') as file:
     loaded_tfidf = pickle.load(file)
 
 def Predict_Sentiment(text, model):
@@ -120,7 +120,7 @@ def Predict_Sentiment(text, model):
 
 """## Load Model"""
 
-loaded_model = pickle.load(open('model_svm.pkl', 'rb'))
+loaded_model = pickle.load(open('model/model_svm.pkl', 'rb'))
 
 """## Make API"""
 
